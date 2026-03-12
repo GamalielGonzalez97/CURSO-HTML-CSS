@@ -1,0 +1,49 @@
+header{
+    margin: 50px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 15px 30px;
+    text-align: center;
+    list-style: none;
+    
+    
+
+}
+
+main{
+    margin: 0px 50px;
+    padding: 0px 25px;
+    background-color: var(--color--gray);
+    opacity: .8;
+
+    
+}
+p{
+    color: lightblue;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-align: justify;
+     word-spacing: 10px;  /*este no sirve para separar el texto */
+}
+
+
+
+h1{
+    color: var(--color--Maroon);
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+
+}
+.fondo-main{
+    width: 200px;
+    height: 200px;
+}
+
+#section{
+    background-image: url("../img/plim.jpg");
+    background-repeat: no-repeat;
+    border: 2px solid black;
+
+}

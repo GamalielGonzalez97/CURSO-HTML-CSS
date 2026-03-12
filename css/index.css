@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+
+    /* Colors */
+    --color-header: #27548A;
+    --color--gray: 	#808080;
+    --color--Maroon: #800000;
+
+    /* Fuentes */
+    --main-font: 'Comic Sans MS', cursive;
+    --main-font-size: 2rem;
+
+
+  }
+
+
+
