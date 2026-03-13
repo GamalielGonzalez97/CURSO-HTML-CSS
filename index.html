@@ -1,113 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda GamaStore</title>
+    <link rel="stylesheet" href="css/landpage.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Tienda GamaStore</title>
-	<link rel="stylesheet" href="css/landpage.css" />
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">GamaStore</h1>
 
-</head>
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          ☰
+        </button>
 
-<body>
-	<!-- Encabezado -->
-	<header>
-		<nav class="navbar">
-			<h1 class="logo">GamaStore</h1>
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-			<!-- Botón hamburguesa -->
-			<button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-				☰
-			</button>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Hero -->
+      <section id="inicio" class="hero">
+        <h2>Bienvenido a GamaStore</h2>
+        <p>Tu tienda de confianza con los mejores productos al mejor precio.</p>
+        <a href="#productos" class="btn">Ver productos</a>
+      </section>
 
-			<!-- Menú de navegación -->
-			<ul class="nav-links" id="nav-links">
-				<li><a href="#inicio">Inicio</a></li>
-				<li><a href="#productos">Productos</a></li>
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+      <!-- Productos -->
+      <section id="productos" class="productos">
+        <h2>Nuestros productos</h2>
+        <div class="grid">
+          <article class="producto">
+            <img src="https://via.placeholder.com/200" alt="Producto 1" />
+            <h3>Producto 1</h3>
+            <p>$199 MXN</p>
+            <button>Agregar al carrito</button>
+          </article>
 
-	<!-- Contenido principal -->
-	<main>
-		<!-- Hero -->
-		<section id="inicio" class="hero">
-			<h2>Bienvenido a GamaStore</h2>
-			<p>Tu tienda de confianza con los mejores productos al mejor precio.</p>
-			<a href="#productos" class="btn">Ver productos</a>
-		</section>
+          <article class="producto">
+            <img src="https://via.placeholder.com/200" alt="Producto 2" />
+            <h3>Producto 2</h3>
+            <p>$249 MXN</p>
+            <button>Agregar al carrito</button>
+          </article>
 
-		<!-- Productos -->
-		<section id="productos" class="productos">
-			<h2>Nuestros productos</h2>
-			<div class="grid">
-				<article class="producto">
-					<img src="https://via.placeholder.com/200" alt="Producto 1" />
-					<h3>Producto 1</h3>
-					<p>$199 MXN</p>
-					<button>Agregar al carrito</button>
-				</article>
+          <article class="producto">
+            <img src="https://via.placeholder.com/200" alt="Producto 3" />
+            <h3>Producto 3</h3>
+            <p>$299 MXN</p>
+            <button>Agregar al carrito</button>
+          </article>
+        </div>
+      </section>
 
-				<article class="producto">
-					<img src="https://via.placeholder.com/200" alt="Producto 2" />
-					<h3>Producto 2</h3>
-					<p>$249 MXN</p>
-					<button>Agregar al carrito</button>
-				</article>
+      <!-- Nosotros -->
+      <section id="nosotros" class="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+          En GamaStore ofrecemos productos de calidad a precios accesibles. Nos
+          enfocamos en la satisfacción de nuestros clientes y en brindar una
+          experiencia única de compra.
+        </p>
+      </section>
 
-				<article class="producto">
-					<img src="https://via.placeholder.com/200" alt="Producto 3" />
-					<h3>Producto 3</h3>
-					<p>$299 MXN</p>
-					<button>Agregar al carrito</button>
-				</article>
-			</div>
-		</section>
+      <!-- Contacto -->
+      <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre" required />
 
-		<!-- Nosotros -->
-		<section id="nosotros" class="nosotros">
-			<h2>Sobre nosotros</h2>
-			<p>
-				En GamaStore ofrecemos productos de calidad a precios accesibles.
-				Nos enfocamos en la satisfacción de nuestros clientes y en brindar una experiencia única de compra.
-			</p>
-		</section>
+          <label>Correo</label>
+          <input type="email" placeholder="Tu correo" required />
 
-		<!-- Contacto -->
-		<section id="contacto" class="contacto">
-			<h2>Contáctanos</h2>
-			<form>
-				<label>Nombre</label>
-				<input type="text" placeholder="Tu nombre" required />
+          <label>Mensaje</label>
+          <textarea placeholder="Tu mensaje" required></textarea>
 
-				<label>Correo</label>
-				<input type="email" placeholder="Tu correo" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
-				<label>Mensaje</label>
-				<textarea placeholder="Tu mensaje" required></textarea>
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2025 GamaStore. Todos los derechos reservados.</p>
+    </footer>
 
-				<button type="submit">Enviar</button>
-			</form>
-		</section>
-	</main>
+    <script>
+      // Toggle menú hamburguesa
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
 
-	<!-- Pie de página -->
-	<footer>
-		<p>&copy; 2025 GamaStore. Todos los derechos reservados.</p>
-	</footer>
-
-	<script>
-		// Toggle menú hamburguesa
-		const menuToggle = document.getElementById('menu-toggle');
-		const navLinks = document.getElementById('nav-links');
-
-		menuToggle.addEventListener('click', () => {
-			navLinks.classList.toggle('active');
-			menuToggle.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
-		});
-	</script>
-</body>
-
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.textContent = navLinks.classList.contains("active")
+          ? "✖"
+          : "☰";
+      });
+    </script>
+    <br />
+  </body>
 </html>
