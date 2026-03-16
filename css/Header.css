@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Separa menú y logo */
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ff4b2b;
+} /* Color de acento para el logo */
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ff4b2b;
+}
+
+/* Esconder el checkbox y el botón de menú en PC */
+#check,
+.menu-btn {
+  display: none;
+}
+
+/* --- RESPONSIVE (Celulares) --- */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block; /* Aparece el icono hamburguesa */
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 60px;
+    left: -100%; /* Escondido a la izquierda */
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+  }
+
+  /* Cuando el checkbox está marcado, el menú entra */
+  #check:checked ~ .nav-menu {
+    left: 0;
+  }
+}
