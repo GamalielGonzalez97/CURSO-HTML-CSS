@@ -1,0 +1,118 @@
+/* Reset General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Tamaño máximo en PC */
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* Grupos de Input */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 5px rgba(118, 75, 162, 0.3);
+}
+
+/* Opciones y Checkbox */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 25px;
+}
+
+.options a {
+  color: #764ba2;
+  text-decoration: none;
+}
+
+/* Botón */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #5a3782;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+
+.register-link a {
+  color: #764ba2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsividad para móviles pequeños */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+}
