@@ -9,8 +9,3 @@ let resultado = num1 + num2;
 
 // En JavaScript para terminal se usa console.log()
 console.log(resultado);
-<<<<<<< HEAD
-=======
-
-//se  copio variables.js para version2
->>>>>>> version2
