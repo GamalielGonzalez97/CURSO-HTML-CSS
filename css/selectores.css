@@ -1,0 +1,56 @@
+/* Selectores Básicos
+Son los que usarás el 90% del tiempo.
+ */
+
+/* 1. Selector Universal: Aplica a TODO en la página */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Selector de Etiqueta: Aplica a todas las etiquetas de ese tipo */
+p {
+  color: gray; /* Todos los <p> serán grises por defecto */
+}
+
+/* 3. Selector de Clase: Se usa un punto (.) seguido del nombre */
+.destacado {
+  color: orange;
+  font-weight: bold;
+  border-left: 5px solid orange;
+  padding-left: 10px;
+}
+
+/* 4. Selector de ID: Se usa un hashtag (#). Solo debe haber UN id igual por página */
+#mi-contenedor {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Selectores de Relación (Combinadores) */
+/* 5. Selector de Descendiente: Espacio entre selectores */
+/* Selecciona cualquier <span> que esté DENTRO de #mi-contenedor */
+#mi-contenedor span {
+  color: blue;
+  text-transform: uppercase;
+}
+
+/* 6. Selector de Hijo Directo: Usa el símbolo (>) */
+/* Solo afecta a los <p> que son hijos inmediatos de <main> */
+main > p {
+  font-style: italic;
+}
+
+/* Selectores de Atributo y Pseudo-clases */
+
+/* 7. Selector de Atributo: Usa corchetes [] */
+input[type="password"] {
+  border: 2px solid red; /* Resalta el campo de contraseña */
+}
+
+/* 8. Pseudo-clases: Representan estados del elemento */
+.destacado:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
