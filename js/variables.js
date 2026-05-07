@@ -10,3 +10,7 @@ var b = 12;
 var resultado = a + b;
 
 console.log(resultado);
+
+mayor = true;
+menor = false;
+console.log(mayor);
