@@ -14,3 +14,6 @@ console.log(resultado);
 mayor = true;
 menor = false;
 console.log(mayor);
+
+let esMayorDeEdad = true;
+let tieneDescuento = false;
