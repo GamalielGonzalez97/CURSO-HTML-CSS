@@ -30,3 +30,10 @@ console.log(usuario);
 // Array: Lista de elementos (colección indexada)
 const colores = ["rojo", "verde", "azul"];
 console.log(colores[0]); // Imprime: "rojo"
+
+// Function: Bloques de código ejecutables
+const saludar = function () {
+  return "¡Hola Mundo!";
+};
+
+console.log(saludar);
