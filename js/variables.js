@@ -26,3 +26,7 @@ const usuario = {
 };
 
 console.log(usuario);
+
+// Array: Lista de elementos (colección indexada)
+const colores = ["rojo", "verde", "azul"];
+console.log(colores[0]); // Imprime: "rojo"
