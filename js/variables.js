@@ -17,3 +17,12 @@ console.log(mayor);
 
 let esMayorDeEdad = true;
 let tieneDescuento = false;
+
+// Object: Colección de propiedades (clave: valor)
+const usuario = {
+  nombre: "Ana",
+  puntos: 1500,
+  esPremium: true,
+};
+
+console.log(usuario);
