@@ -41,10 +41,13 @@ console.log(saludar);
 let textoNum = "42";
 
 // Opción A: Función Number() - La más limpia
-let num1 = Number(textoNum); 
+let num1 = Number(textoNum);
 
 // Opción B: parseInt() - Extrae el entero (ignora decimales)
 let num2 = parseInt("42.5"); // Resultado: 42
 
 // Opción C: El truco del operador unario (+)
 let num3 = +textoNum; // Forma rápida de convertir
+
+Arraysupermercado = ["manzana", "platano", "pera"];
+console.log(Arraysupermercado[2]);
