@@ -51,3 +51,13 @@ let num3 = +textoNum; // Forma rápida de convertir
 
 Arraysupermercado = ["manzana", "platano", "pera"];
 console.log(Arraysupermercado[2]);
+
+// Creación de la lista (Array)
+const listaDeTareas = [
+  "Comprar leche",
+  "Estudiar JavaScript",
+  "Ir al gimnasio",
+];
+
+// 1. Ver toda la lista completa
+console.log(listaDeTareas);
