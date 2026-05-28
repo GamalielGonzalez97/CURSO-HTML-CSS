@@ -12,3 +12,7 @@ console.log(pais);
 
 // var Antes se usaba mucho, hoy casi no se recomienda.
 var ciudad = "Ciudad de México";
+
+// string
+let ciudad = "Durango";
+console.log(ciudad);
