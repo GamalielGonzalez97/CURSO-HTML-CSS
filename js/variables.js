@@ -9,3 +9,6 @@ console.log(nombre);
 
 const pais = "México";
 console.log(pais);
+
+// var Antes se usaba mucho, hoy casi no se recomienda.
+var ciudad = "Ciudad de México";
