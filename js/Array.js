@@ -1,3 +1,3 @@
 let juguetes = ["Carro", "Pelota", "Muñeca"];
 
-console.log(juguetes);
+console.log(juguetes[2]); // Carro
