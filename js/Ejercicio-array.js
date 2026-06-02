@@ -9,4 +9,4 @@ console.log("Después de agregar:");
 console.log(videojuegos);
 
 console.log("Primer juego:");
-console.log(videojuegos[0]);
+console.log(videojuegos[2]);
