@@ -1,45 +1,30 @@
-// Necesitamos esto para que Node.js pueda leer lo que escribes en el teclado
-const readline = require("readline").createInterface({
+//importar herramienta de node.js para leer datos por consola
+const readline = require("readline");
+
+//configurar para la entrada y salida de datos por consola
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-// Le hacemos la pregunta al usuario
-readline.question(
-  "¿Qué fruta quieres comprar? (opciones: manzana, platano, uva): ",
-  (frutaUsuario) => {
-    // Convertimos lo que escribió el usuario a minúsculas por si escribe "MANZANA" o "Manzana"
-    const fruta = frutaUsuario.toLowerCase().trim();
+//preguntar al usuario usuario por consola y se quedan esperando a que el usuario ingrese un dato y presione enter
+rl.question("escribe una fruta(manzana, platano, uva): ", (fruta) => {
+  //convertir el dato ingresado a un número entero
 
-    console.log("\n--- Resultado de tu búsqueda ---");
+  switch (fruta) {
+    case "manzana":
+      console.log("La manzana es roja");
+      break;
+    case "platano":
+      console.log("El platano es amarillo");
+      break;
+    case "uva":
+      console.log("La uva es morada");
+      break;
+    default:
+      console.log("Fruta no reconocida");
+  }
 
-    // ¡Aquí empieza nuestro switch de frutas!
-    switch (fruta) {
-      case "manzana":
-        console.log(
-          "🍎 La manzana cuesta $1.50 el kilo. ¡Está muy roja y dulce!",
-        );
-        break;
-
-      case "platano":
-      case "plátano": // Podemos poner dos casos juntos por si lo escribe con o sin tilde
-        console.log(
-          "🍌 El plátano cuesta $1.20 el kilo. ¡Viene en tarta o para licuado!",
-        );
-        break;
-
-      case "uva":
-        console.log("🍇 Las uvas cuestan $2.50 el kilo. ¡No tienen semillas!");
-        break;
-
-      default:
-        console.log(
-          `❌ Lo sentimos, no tenemos "${frutaUsuario}" en nuestra frutería hoy.`,
-        );
-        break;
-    }
-
-    // Cerramos la lectura del teclado para que el programa termine
-    readline.close();
-  },
-);
+  //cerrar la interfaz de lectura de datos por consola
+  rl.close();
+});
