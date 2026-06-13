@@ -22,7 +22,7 @@ rl.question("escribe una fruta(manzana, platano, uva): ", (fruta) => {
       console.log("La uva es morada");
       break;
     default:
-      console.log("Fruta no reconocida");
+      console.log("Fruta no reconocida!");
   }
 
   //cerrar la interfaz de lectura de datos por consola
