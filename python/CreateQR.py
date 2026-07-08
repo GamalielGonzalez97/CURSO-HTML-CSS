@@ -1,12 +1,20 @@
+import os
 import qrcode
 
-# Link que queremos guardar
+# Link que quieres guardar
 url = "https://www.facebook.com"
 
-# Crear QR
+# Crear el QR
 img = qrcode.make(url)
 
-# Guardarlo
-img.save("#")
+# Ruta donde se guardará
+ruta = os.path.join("img", "facebook_qr.png")
 
-print("QR creado correctamente")
+# Guardar la imagen
+img.save(ruta)
+
+print("QR generado correctamente.")
+print("Guardado en:", os.path.abspath(ruta))
+
+# Abrir la imagen automáticamente
+os.startfile(os.path.abspath(ruta))
