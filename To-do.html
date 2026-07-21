@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="./css/to-do.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h2>Mi Lista de Tareas</h2>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Escribe una nueva tarea..."
+        />
+        <button onclick="addTask()">Agregar</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
