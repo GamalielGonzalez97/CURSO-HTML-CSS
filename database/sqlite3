@@ -1,0 +1,33 @@
+const Database = require("better-sqlite3");
+const db = new Database("./database/Data.db");
+
+// Crear la tabla si no existe
+db.prepare(
+  `
+  CREATE TABLE IF NOT EXISTS registros (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT,
+    descripcion TEXT
+  )
+`,
+).run();
+
+// --- GUARDAR ---
+function guardar(nombre, descripcion) {
+  const stmt = db.prepare(
+    "INSERT INTO registros (nombre, descripcion) VALUES (?, ?)",
+  );
+  return stmt.run(nombre, descripcion);
+}
+
+// --- BORRAR UN REGISTRO ---
+function borrar(id) {
+  const stmt = db.prepare("DELETE FROM registros WHERE id = ?");
+  return stmt.run(id);
+}
+
+// --- BORRAR TODO ---
+function borrarTodo() {
+  const stmt = db.prepare("DELETE FROM registros");
+  return stmt.run();
+}
