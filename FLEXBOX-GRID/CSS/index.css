@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0216413a;
+  color: white;
+  padding: 18px 40px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
